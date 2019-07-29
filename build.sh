@@ -11,3 +11,4 @@ if [ -z "${GOARCH}" ]; then
 fi
 
 go build -v -o bin/wait-for-signal-${GOOS}-${GOARCH}-${VERSION} ./cmd/wait-for-signal
+go build -v -o bin/send-signal-${GOOS}-${GOARCH}-${VERSION} ./cmd/send-signal
