@@ -4,7 +4,7 @@ These are two binaries to be used when an application needs to wait for some oth
 
 When I created these tools, I intended to use them in different Docker containers executed by `docker-compose`. An application needed to wait for another container to be fully provisioned before it was able to start.
 
-This situation is similar to the ones handled by [wait-for-it](https://github.com/vishnubob/wait-for-it), but instead of waiting to a service to be running and listening in some port, I want a task A to be finished (like a database provisioning) before a task B could start (like a backend application).
+This situation is similar to the ones handled by [wait-for-it](https://github.com/vishnubob/wait-for-it), but instead of waiting to a service to be running and listening in some port, I want some task A to be finished (like a database provisioning) before some task B could start (like a backend application).
 
 ## Building
 
