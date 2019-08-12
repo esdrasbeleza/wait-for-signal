@@ -9,7 +9,7 @@ EXPOSE 80
 COPY --from=builder /hello-world .
 COPY ./run.sh .
 
-RUN wget https://github.com/esdrasbeleza/wait-for-signal/raw/master/bin/wait-for-signal-linux-amd64-0.1 -O /tmp/wait-for-signal
+RUN wget https://github.com/esdrasbeleza/wait-for-signal/raw/master/build/bin/wait-for-signal-linux-amd64-0.1 -O /tmp/wait-for-signal
 RUN chmod +x /tmp/wait-for-signal
 
 ENTRYPOINT ["./run.sh"]
