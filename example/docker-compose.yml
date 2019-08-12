@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  some-slow-dependency:
+    build: ./some-slow-dependency
+
+  main-application:
+    build: ./main-application
+    depends_on:
+      - some-slow-dependency
+    ports:
+      - "8080:80"
